@@ -7,8 +7,7 @@ from news_detection import get_news_status
 app = Flask(__name__) # Initialize the Flask app
 
 app.config['UPLOAD_FOLDER'] = os.getcwd() + '/tmp'
-# genai.configure(api_key=os.environ['GENAI_API_KEY'])
-genai.configure(api_key=' ') 
+genai.configure(api_key=os.environ['GENAI_API_KEY'])
 
 # Home route - to display the upload form (GET request)
 @app.route('/', methods=['GET'])
