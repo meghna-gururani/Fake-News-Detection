@@ -8,7 +8,7 @@ app = Flask(__name__) # Initialize the Flask app
 
 app.config['UPLOAD_FOLDER'] = os.getcwd() + '/tmp'
 # genai.configure(api_key=os.environ['GENAI_API_KEY'])
-genai.configure(api_key='AIzaSyC5EtfftlpKYo12mDrgXB-XD1WpYE2zKyI')
+genai.configure(api_key=' ') 
 
 # Home route - to display the upload form (GET request)
 @app.route('/', methods=['GET'])
